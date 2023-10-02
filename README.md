@@ -22,7 +22,6 @@ Esto iniciará un contenedor RabbitMQ que Tripster MQ utilizará para gestionar 
 
   ```bash
   go build -o tripster_mq main.go
-  ./tripster_mq
   ```
 Esto compilará el código de Tripster MQ y lo ejecutará. El microservicio comenzará a escuchar la cola de mensajes de RabbitMQ y procesará los mensajes entrantes según sea necesario.
 
