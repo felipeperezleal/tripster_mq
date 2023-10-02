@@ -20,3 +20,8 @@ func InitRabbitMQConnection() *RabbitMQConnection {
 	fmt.Println("Conexión a RabbitMQ establecida.")
 	return &RabbitMQConnection{Conn: conn}
 }
+
+func (r *RabbitMQConnection) Close() {
+	r.Conn.Close()
+	fmt.Println("Conexión a RabbitMQ cerrada.")
+}

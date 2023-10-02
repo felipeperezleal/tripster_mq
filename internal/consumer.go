@@ -3,6 +3,7 @@ package rabbitmq
 import (
 	"fmt"
 	"log"
+	"time"
 
 	"github.com/streadway/amqp"
 )
@@ -39,5 +40,9 @@ func (c *RabbitMQConsumer) StartConsuming() {
 
 	for msg := range msgs {
 		fmt.Printf("Recibido mensaje: %s\n", msg.Body)
+
+		fmt.Println("Esperando a que el algoritmo se complete...")
+		time.Sleep(5 * time.Second)
+		fmt.Println("El algoritmo se ha completado.")
 	}
 }
