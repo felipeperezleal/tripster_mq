@@ -21,7 +21,6 @@ Esto iniciará un contenedor RabbitMQ que Tripster MQ utilizará para gestionar 
 ### Compilar y ejecutar Tripster MQ:
 
   ```bash
-  Copy code
   go build -o tripster_mq main.go
   ./tripster_mq
   ```
