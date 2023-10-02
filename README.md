@@ -28,4 +28,4 @@ Esto compilará el código de Tripster MQ y lo ejecutará. El microservicio come
 Tripster MQ estará listo para recibir y procesar mensajes de otros componentes de la aplicación.
 
 ## Uso
-Para utilizar Tripster MQ en tu aplicación, puedes enviar mensajes a la cola de RabbitMQ utilizando una biblioteca de RabbitMQ compatible con Go. Tripster MQ escuchará la cola de mensajes y procesará los mensajes entrantes.
+Tripster MQ escuchará la cola de mensajes y procesará los mensajes entrantes.
