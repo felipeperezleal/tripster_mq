@@ -29,6 +29,8 @@ func (c *RabbitMQConsumer) StartConsuming() {
 	_, err = ch.QueueDeclare(queueName, true, false, false, false, nil)
 	if err != nil {
 		log.Fatal(err)
+	} else {
+		fmt.Printf("Cola %s creada exitosamente.\n", queueName)
 	}
 
 	msgs, err := ch.Consume(queueName, "", true, false, false, false, nil)
