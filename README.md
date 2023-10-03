@@ -1,6 +1,6 @@
 # Tripster MQ
 
-Tripster MQ es un microservicio que utiliza RabbitMQ para proporcionar una cola de mensajes. Este microservicio se encarga de recibir mensajes de otros componentes de la aplicación y procesarlos según sea necesario.
+Tripster MQ es un componente que utiliza RabbitMQ para proporcionar una cola de mensajes. Este microservicio se encarga de recibir mensajes de otros componentes de la aplicación y procesarlos según sea necesario.
 
 ## Requisitos
 
@@ -27,7 +27,7 @@ Esto iniciará un contenedor RabbitMQ que Tripster MQ utilizará para gestionar 
   ```bash
   go build -o tripster_mq main.go
   ```
-Esto compilará el código de Tripster MQ y lo ejecutará. El microservicio comenzará a escuchar la cola de mensajes de RabbitMQ y procesará los mensajes entrantes según sea necesario.
+Esto compilará el código de Tripster MQ y lo ejecutará. El componente comenzará a escuchar la cola de mensajes de RabbitMQ y procesará los mensajes entrantes según sea necesario.
 
 Tripster MQ estará listo para recibir y procesar mensajes de otros componentes de la aplicación.
 
