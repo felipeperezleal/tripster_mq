@@ -17,7 +17,7 @@ Para ejecutar Tripster MQ, primero asegúrate de tener Docker instalado. Luego, 
 1. Ejecuta el siguiente comando para iniciar un contenedor Docker de RabbitMQ:
 
    ```bash
-   docker run --network=routesnetwork -d --name tripster-mq -p 5672:5672 rabbitmq:3 
+   docker run --network=routes-network -d --name tripster-mq -p 5672:5672 rabbitmq:3 
    ```
 
 Esto iniciará un contenedor RabbitMQ que Tripster MQ utilizará para gestionar la cola de mensajes.
