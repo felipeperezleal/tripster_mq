@@ -12,7 +12,7 @@ type RabbitMQConnection struct {
 }
 
 func InitRabbitMQConnection() *RabbitMQConnection {
-	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
+	conn, err := amqp.Dial("amqp://guest:guest@host.docker.internal:5672/")
 	if err != nil {
 		log.Fatal(err)
 	}
