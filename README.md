@@ -5,9 +5,9 @@ Tripster MQ es un componente que utiliza RabbitMQ para proporcionar una cola de 
 ## Requisitos
 
 - Docker (para ejecutar RabbitMQ)
-- Asegúrate de haber creado la red de Docker anteriormente
+- Asegúrate de haber descargado la imagen de docker anteriormente
   ```cmd
-   docker network create routes-network
+   docker pull felipeperezleal/tripster_mq
   ```
 
 ## Ejecución
@@ -17,17 +17,10 @@ Para ejecutar Tripster MQ, primero asegúrate de tener Docker instalado. Luego, 
 1. Ejecuta el siguiente comando para iniciar un contenedor Docker de RabbitMQ:
 
    ```bash
-   docker run --network=routes-network -d --name tripster-mq -p 5672:5672 rabbitmq:3 
+   docker run 5672:5672 felipeperezleal/tripster_mq
    ```
 
 Esto iniciará un contenedor RabbitMQ que Tripster MQ utilizará para gestionar la cola de mensajes.
-
-### Compilar y ejecutar Tripster MQ:
-
-  ```bash
-  go build -o tripster_mq main.go
-  ```
-Esto compilará el código de Tripster MQ y lo ejecutará. El componente comenzará a escuchar la cola de mensajes de RabbitMQ y procesará los mensajes entrantes según sea necesario.
 
 Tripster MQ estará listo para recibir y procesar mensajes de otros componentes de la aplicación.
 
